@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="add-wrapper">
+      <router-view/>
     </div>
-    <router-view/>
+    <PageFooter />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import PageFooter from './components/footer'
+export default {
+  components: {
+    PageFooter
   }
 }
+</script>
+
+<style lang="scss">
+#app {
+  height: 89vh;
+  padding: 40px;
+  background-color: rgb(228,235,245);
+  overflow: hidden;
+  #add-wrapper {
+    box-shadow: var(--shadow);
+    padding: 20px;
+    max-height: 600px;
+    overflow: scroll;
+    margin-bottom: 20px;
+  }
+}
+
 </style>
