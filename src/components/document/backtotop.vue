@@ -4,9 +4,9 @@
     <h3>biu~ 我又回到上面啦</h3>
     <h2>基本用法</h2>
     <source-code :source_code="source_code">
-      <neu-backtohead :height="0">
+      <neu-backtotop :height="0">
         回到顶部
-      </neu-backtohead>
+      </neu-backtotop>
     </source-code>
     <h2>Attributes</h2>
     <arrt-table :tableRowData="tableRowData"></arrt-table>
@@ -51,9 +51,9 @@ export default class Backtotop extends Vue {
   private source_code: string = 
 `
 <div>
-  <neu-backtohead :height="0">
+  <neu-backtotop :height="0">
     回到顶部
-  </neu-backtohead>
+  </neu-backtotop>
 </div>
 `
 

@@ -9,7 +9,7 @@
     <!-- 下方的 collapse 是源代码区 -->
     <neu-collapse>
       <neu-collapseitem title="详细代码">
-        <pre v-highlightjs>
+        <pre>
           <code v-text="source_code">
           </code>
         </pre>

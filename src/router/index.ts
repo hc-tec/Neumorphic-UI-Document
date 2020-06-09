@@ -11,6 +11,7 @@ const routes: RouteConfig[] = [
   },
   {
     path: '/document',
+    redirect: '/document/install',
     name: 'document',
     component: () => import('../views/document.vue'),
     children: [
@@ -28,6 +29,11 @@ const routes: RouteConfig[] = [
         path: 'icon',
         name: 'icon',
         component: () => import('../components/document/icon.vue'),
+      },
+      {
+        path: 'button',
+        name: 'button',
+        component: () => import('../components/document/button.vue'),
       },
       {
         path: 'anchor',

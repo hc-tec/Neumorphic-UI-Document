@@ -4,7 +4,7 @@
     <h3>首先引入 Neumorphic-UI</h3>
     <p>目前仅支持全局引入</p>
     main.js
-    <pre v-highlightjs>
+    <pre>
       <code>
 import Vue from 'vue';
 import App from './App.vue';
@@ -24,7 +24,7 @@ new Vue({
     <source-code :source_code="source_code">
       <!-- 样式代码写这 -->
       <neu-tooltip content="点击就可以发送消息提示了喔">
-        <neu-neumorphicbtn @click="sendMessage">来个消息提示</neu-neumorphicbtn>
+        <neu-button @click="sendMessage">来个消息提示</neu-button>
       </neu-tooltip>
     </source-code>
     <p>感觉如何，使用起来是不是非常简单？</p>
@@ -46,8 +46,7 @@ export default class Quickstart extends Vue {
     `
 <template>
   <neu-tooltip content="点击就可以发送消息提示了喔">
-    <!--这儿有个 Bug neu-neumorphicbtn 之后会被改为 neu-button-->
-    <neu-neumorphicbtn @click="sendMessage">来个消息提示</neu-neumorphicbtn>
+    <neu-button @click="sendMessage">来个消息提示</neu-button>
   </neu-tooltip>
 </template>
 <script lang='ts'>

@@ -6,8 +6,7 @@
     <p>不能单独使用，需要结合 neu-checkboxgroup 一同使用</p>
     <p>与单选框类似，name 是绑定值取到的值而非标签的内容</p>
     <source-code :source_code="source_code">
-      <!-- 一个小 Bug chechboxgroup 改成 checkboxgroup -->
-      <neu-chechboxgroup v-model="checkOutList">
+      <neu-checkboxgroup v-model="checkOutList">
         <neu-checkbox name="苹果">
           苹果
         </neu-checkbox>
@@ -17,13 +16,13 @@
         <neu-checkbox name="樱桃">
           樱桃
         </neu-checkbox>
-      </neu-chechboxgroup>
+      </neu-checkboxgroup>
       目前选择到的水果有{{ checkOutList }}
     </source-code>
     <h2>禁用状态</h2>
     <source-code  :source_code="source_code2">
-      <!-- 一个小 Bug chechboxgroup 改成 checkboxgroup -->
-      <neu-chechboxgroup v-model="checkOutList2">
+      <!-- 一个小 Bug checkboxgroup 改成 checkboxgroup -->
+      <neu-checkboxgroup v-model="checkOutList2">
         <neu-checkbox name="苹果" disabled>
           苹果
         </neu-checkbox>
@@ -33,13 +32,13 @@
         <neu-checkbox name="樱桃">
           樱桃
         </neu-checkbox>
-      </neu-chechboxgroup>
+      </neu-checkboxgroup>
       目前选择到的水果有{{ checkOutList2 }}
     </source-code>
     <h2>Attributes</h2>
     <arrt-table :tableRowData="tableRowData">
     </arrt-table>
-    <h2>ChechboxGroup Events</h2>
+    <h2>checkboxgroup Events</h2>
     <event-table :eventTableRowData="eventTableRowData">
     </event-table>
   </div>
@@ -93,8 +92,8 @@ export default class Checkbox extends Vue {
 `
 <template>
   <div>
-    <!-- 一个小 Bug chechboxgroup 改成 checkboxgroup -->
-    <neu-chechboxgroup v-model="checkOutList">
+    <!-- 一个小 Bug checkboxgroup 改成 checkboxgroup -->
+    <neu-checkboxgroup v-model="checkOutList">
       <neu-checkbox name="苹果">
         苹果
       </neu-checkbox>
@@ -104,7 +103,7 @@ export default class Checkbox extends Vue {
       <neu-checkbox name="樱桃">
         樱桃
       </neu-checkbox>
-    </neu-chechboxgroup>
+    </neu-checkboxgroup>
     目前选择到的水果有{{ checkOutList }}
   </div>
 </template>
@@ -120,8 +119,8 @@ export default class Checkbox extends Vue {
 `
 <template>
   <div>
-    <!-- 一个小 Bug chechboxgroup 改成 checkboxgroup -->
-    <neu-chechboxgroup v-model="checkOutList2">
+    <!-- 一个小 Bug checkboxgroup 改成 checkboxgroup -->
+    <neu-checkboxgroup v-model="checkOutList2">
       <neu-checkbox name="苹果" disabled>
         苹果
       </neu-checkbox>
@@ -131,7 +130,7 @@ export default class Checkbox extends Vue {
       <neu-checkbox name="樱桃">
         樱桃
       </neu-checkbox>
-    </neu-chechboxgroup>
+    </neu-checkboxgroup>
     目前选择到的水果有{{ checkOutList2 }}
   </div>
 </template>

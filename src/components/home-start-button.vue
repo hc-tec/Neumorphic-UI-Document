@@ -1,15 +1,15 @@
 <template>
   <div class="start-btn-group">
-    <neu-neumorphicbtn 
+    <neu-button 
       color="primary"
       @click="toDocument">
       进入教程
-    </neu-neumorphicbtn>
-    <neu-neumorphicbtn
+    </neu-button>
+    <neu-button
       @click="toGithub" 
       icon="fa fa-github"
       circle>
-    </neu-neumorphicbtn>
+    </neu-button>
   </div>
 </template>
 <script lang='ts'>

@@ -5,18 +5,18 @@
     <h2>基本用法</h2>
     <p></p>
     <source-code :source_code="source_code">
-      <neu-neumorphicbtn
+      <neu-button
         @click="open">
         打开消息提示
-      </neu-neumorphicbtn>
+      </neu-button>
     </source-code>
     <h2>信息类型配置</h2>
     <p>配置中的 type 有四种类型：success | warning | error | info</p>
     <source-code :source_code="source_code2">
-      <neu-neumorphicbtn @click="open1">成功</neu-neumorphicbtn>
-      <neu-neumorphicbtn @click="open2">警告</neu-neumorphicbtn>
-      <neu-neumorphicbtn @click="open3">消息</neu-neumorphicbtn>
-      <neu-neumorphicbtn @click="open4">错误</neu-neumorphicbtn>
+      <neu-button @click="open1" color="success">成功</neu-button>
+      <neu-button @click="open2" color="warning">警告</neu-button>
+      <neu-button @click="open3" color="info">消息</neu-button>
+      <neu-button @click="open4" color="danger">错误</neu-button>
     </source-code>
     <h2>Config</h2>
     <arrt-table :tableRowData="tableRowData">
@@ -121,10 +121,10 @@ export default class Message extends Vue {
 `
 <template>
   <div>
-    <neu-neumorphicbtn
+    <neu-button
       @click="open">
       打开消息提示
-    </neu-neumorphicbtn>
+    </neu-button>
   </div>
 </template>
 <script lang='ts'>
@@ -150,10 +150,10 @@ export default class Message extends Vue {
 `
 <template>
   <div>
-    <neu-neumorphicbtn @click="open1">成功</neu-neumorphicbtn>
-    <neu-neumorphicbtn @click="open2">警告</neu-neumorphicbtn>
-    <neu-neumorphicbtn @click="open3">消息</neu-neumorphicbtn>
-    <neu-neumorphicbtn @click="open4">错误</neu-neumorphicbtn>
+    <neu-button @click="open1" color="success">成功</neu-button>
+    <neu-button @click="open2" color="warning">警告</neu-button>
+    <neu-button @click="open3" color="info">消息</neu-button>
+    <neu-button @click="open4" color="danger">错误</neu-button>
   </div>
 </template>
 <script lang='ts'>

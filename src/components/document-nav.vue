@@ -4,7 +4,7 @@
     :router="true"
     >
     <template slot="title">
-      <h2>目录</h2>
+      <h2>Catalog 目录</h2>
     </template>
     <neu-navitem 
       color="#000"
@@ -27,7 +27,7 @@ export default class DocumentNav extends Vue {
       'link': '/document/install',
     },
     {
-      'title': 'QuickStart 快速入门',
+      'title': 'QuickStart 快速开始',
       'link': '/document/quick-start',
     },
     {
@@ -36,7 +36,7 @@ export default class DocumentNav extends Vue {
     },
     {
       'title': 'Button 按钮',
-      'link': '/document/',
+      'link': '/document/button',
     },
     {
       'title': 'Anchor 锚点',
