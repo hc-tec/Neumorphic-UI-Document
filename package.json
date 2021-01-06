@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@types/highlight.js": "^9.12.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "highlightjs": "^9.16.2",
     "neumorphic-ui-vue": "^1.0.2",
